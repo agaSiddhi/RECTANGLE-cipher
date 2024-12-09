@@ -1,0 +1,20 @@
+\section{Software Implementation}
+
+\begin{frame}{Software Implementation}
+    \begin{block}{encryptor.py}
+        \begin{itemize}
+            \item Uses a 25-round encryption process with operations: AddRoundKey, SubColumn, and ShiftRows.
+            \item Accepts a 16-character hexadecimal input, padding it if needed.
+            \item Generates a 20-character random key for encryption.
+        \end{itemize}
+    \end{block}
+
+    \begin{block}{decryptor.py}
+        \begin{itemize}
+            \item Reverses encryption steps using precomputed round keys.
+            \item Computes all 25 round keys beforehand for accurate decryption.
+            \item Outputs the decrypted plaintext as a hexadecimal string.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
